@@ -1,0 +1,14 @@
+BoxLayout:
+    orientation: 'vertical'
+
+    MDTextField:
+        id: note_input
+        hint_text: "Введите заметку"
+        mode: "fill"
+        fill_color: 1, 1, 1, 0.5
+
+    MDIconButton:
+        icon: "plus"
+        on_release: app.add_note()
+    MDBoxLayout:
+        id: toolbar
